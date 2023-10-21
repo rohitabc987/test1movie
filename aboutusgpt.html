@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="./movie.css">
+</head>
+<body>
+    <!-- Your "About Us" content goes here -->
+    <h1>About Us</h1>
+    <p>Welcome to our website! We are a team of movie enthusiasts who love to share the latest movies with you.</p>
+
+    <!-- You can add more content as needed -->
+
+    <!-- Include the navigation bar from your existing code -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Latest Movie</a></li>
+            <li><a href="">TV Shows</a></li>
+            <li><a href="http://127.0.0.1:5500/movie_website/help.html">Help</a></li>
+            <li><a href="http://127.0.0.1:5500/movie_website/aboutus.html">About Us</a></li>
+            <li><a href="http://127.0.0.1:5500/movie_website/contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="search">    
+            <form>
+            <input class="sbutton" id="search" onkeyup="searchMovies()" type="text" placeholder="Search.." name="search">
+            <button type="submit" onclick="searchMovies()"><i class="fa fa-search"></i></button>   
+            <button type="reset" class="reset" onclick="clearsearch()" id="clear">Clear Search</button>
+            </form>      
+        </div>
+    </nav>
+
+    <!-- Include the message box from your existing code -->
+    <p id="searchMessage" class="message" style="display: none;"></p>
+
+    <!-- Include the footer or any additional elements from your existing code if needed -->
+
+    <!-- Include your JavaScript file for functionality -->
+    <script src="./movie.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/*title*/
+/* >>> */
+.title{
+    text-align: center;
+    color: blue;
+    font-style:italic;
+    font-style: serif;
+    font-size: 35px;
+
+}
+
+/* navigation */
+/* >>> */
+.navbar{
+    display:flexbox;  
+    display: flex;
+    background-color: rgb(18, 18, 18);
+    border-radius: 9px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+/* nav element */
+.navbar li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 10px;
+    margin: 4px 3px;
+    transition: 0.6s;
+    transform: 5px;
+    font-style: oblique;   
+    font-size: 18px;
+}  
+
+.navbar li a{
+    text-decoration: none;
+     color: white;
+}
+
+.navbar li a:hover{
+    color: rgb(238, 250, 22);
+    border: 2px dotted white;
+    transform: 200%;
+    transition: all ease 0.3s;
+}
+
+.navbar input{
+    border: 5px solid black;
+    border-radius: 11px;
+}
+
+/* search button */
+.search{
+    margin-left: 200px;
+    float: right;
+    color: white;
+    padding: 12px 40px;
+    border-width: 30px;
+}
+
+/* clear button */
+.reset{
+    color: white;
+    transition: 0.6s;
+    background-color: rgb(9, 214, 255);
+    border-radius: 9px;
+    font-size: 14px;
+    margin-left: 5px;    
+}
+
+
+/* class of both text and images */
+/* >>> */
+.pictures{
+    margin-left: 35px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex: 1;
+}
+
+/* images */
+.img{
+    height: 200px;
+    width: 340px;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* image tranformation */
+.pictures:hover .img {
+    transform: scale(1.2); 
+}
+
+/* movies text */
+.text{
+    display: flex;
+    font-size: 22px;
+    margin-left: 220px;
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    transition: transform 0.4s ease-in-out;
+ } 
+ 
+/* text transition */
+.pictures:hover .text{
+    transform: scale(1.15);
+    color: red;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* playing video */
+.video{
+    width: 400px;
+    display: flex;
+    animation-duration: 200ms; 
+}
+
+
+/* if movie not found */
+/* >>> */
+
+/* message box */
+.message{
+    color: red;
+    text-align: center;  
+    font-size: 25px;
+    margin-top: 200px;
+}
+
+/* refresh button */
+.refresh {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* movie not found button */
+.refresh button {
+    background-color: rgb(8, 205, 236);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 17px; 
+    border-color: rgb(8, 205, 236);
+}
+
+/* related movies list */
+.relatedMovies{
+    margin-top: 1000px;
+
+}
+
+/* for small desktop size */
+/* >>> */
+@media(max-width:950px){
+
+    /* class of image and text */
+    .pictures{
+        flex-direction: column;
+    }
+
+    /* search */
+    .search{
+        margin-left: 5px;
+    }
+
+    /*images  */
+    .pictures img{
+        flex: 0 150%;
+        max-width: 100%;
+    }
+
+    /* text */
+    .pictures aside{
+        flex: 0 150%;
+        padding: 30px;
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+}
+
+
+/*  for mobile phone */
+/* >>> */
+@media (max-width: 500px) {
+
+    /* title */
+    .title{
+        font-size: 32px;
+    }
+  
+    /* navbar */
+    .navbar li{
+        display: inline-block;
+        list-style: none;
+        padding: 4px 5px;
+        transition: 0.6s;
+        transform: 5px;
+        font-style: oblique;   
+        font-size: 18px;
+    }  
+    
+    /* search */
+    .search{  
+        float: left;
+        color: white;
+        padding: 12px 4px;
+        border-width: 20px;  
+        margin-right: 10px;
+    }
+
+    /* for input in search */
+    input{
+        width: 120px;
+    }
+
+    /* reset button */
+    .reset{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+
+    /* class of pictures and text */
+    /* >>> */
+    .pictures {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    /* images */
+    .pictures .img {
+        height: auto;
+        margin-right: 0px;
+        max-width: 95%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    /* text */
+    .pictures .text {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 8px;
+        font-size: 16px;
+        transition: transform 0.4s ease-in-out;
+    }
+}
+
+

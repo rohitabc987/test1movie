@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest movies and download them in 4k HD quality. Get access to a wide range of movie collections.">
+    <meta name="keywords" content="javan movie full download in hd,javan full movie play,latest movies,download latest action movie, movie downloads, 4k HD movies, watch movies online, movie collections, entertainment, movie streaming">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>jawan full movie | Latest Movies - Movie Downloads | Your Website Name</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="./movie.css">
+</head>
+<body>
+
+    <!-- title -->
+    <h1 class="title"><span><u>Lateest Movies</u></span></h1>
+
+    <!-- nav bar -->
+    <!-- >>> -->
+    <nav class="navbar">
+        <ul>
+            <!-- nav button -->
+            <li><a href="">Home</a></li>
+            <li><a href="">Latest Movie</a></li>
+            <li><a href="">TV Shows</a></li>
+            <li class="second-line"><a href="help.html">Help</a></li>
+            <li class="second-line"><a href="aboutus.html">About Us</a></li>
+            <li class="second-line"><a href="contactus.html">Contact Us</a></li>
+            <div class="search third-line">    
+                <form>
+                    <input class="sbutton" id="search" onkeyup="searchMovies()" type="text" placeholder="Search.." name="search">
+                    <button type="submit" onclick="searchMovies()"><i class="fa fa-search"></i></button>   
+                    <button type="reset" class="reset" onclick="clearsearch()" id="clear">Clear Search</button>
+                </form>      
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- message box if movie not found -->
+    <p id="searchMessage" class="message" style="display: none;"></p>
+   
+    <!-- refresh button if movie not found -->
+    <div class="refresh">
+        <button id="refreshButton" onclick="refreshPage()" style="display: none;">Refresh</button>
+    </div>
+
+    <!-- Related movies list -->
+    <ul id="relatedMovies"></ul>
+
+
+    <!-- movie pictures and text -->
+    <!-- >>> -->
+    <main>
+
+        <!-- jawan -->
+        <div class="pictures" >
+            <a href="https://www.veed.io/view/bc776585-6d73-4ea0-893f-90cff218b47d?sharingWidget=true&panel=share" target="_self">
+                <img class="img" src="thumbnail\jawan.jpeg" alt="Gadar 2" title="Click to watch"  loading="lazy">      
+            </a>
+            <aside class="text"><a href="#">
+                Jawan full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+
+        <!-- gadar 2 -->
+        <div class="pictures">
+            <a href="https://www.veed.io/view/bc776585-6d73-4ea0-893f-90cff218b47d?sharingWidget=true&panel=share" target="_self">
+                <img class="img" src="thumbnail\gadar2.jpg" alt="Gadar 2" title="Click to watch"  loading="lazy">
+            </a>
+            <aside class="text"><a href="https://www.veed.io/view/bc776585-6d73-4ea0-893f-90cff218b47d?sharingWidget=true&panel=share">
+                Gadar2 full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+
+        <!-- omg 2 -->
+        <div class="pictures">
+            <a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share">
+                <img class="img" src="thumbnail\omg2.jpg" alt="OMG 2" title="Click to watch" loading="lazy">
+            </a>
+            <aside class="text"><a href="https://www.veed.io/view/fd58d6ac-8035-4ae7-acc6-6d203c4956f5?sharingWidget=true&panel=share">
+                Omg 2 full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+
+        <!-- ghoomer -->
+        <div class="pictures">
+            <a href="https://www.veed.io/view/c77fd80e-a189-4f32-b5d2-b00945fcfb8e?sharingWidget=true&panel=share">
+                <img class="img" src="thumbnail\ghoomer.jpg" alt="Ghoomer" title="Click to watch" loading="lazy">
+            </a>
+            <aside class="text"><a href="https://www.veed.io/view/c77fd80e-a189-4f32-b5d2-b00945fcfb8e?sharingWidget=true&panel=share">
+                Ghoomer full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+
+        <!-- kgf 2 -->
+        <div class="pictures">
+            <a href="https://www.veed.io/view/5ad8baf7-b0b9-4914-8e5e-2b8c3432ecdf?sharingWidget=true&panel=share">
+                <img class="img" src="thumbnail\kgf chapter 2.jpg" alt="Kgf Chapter 2" title="Click to watch" loading="lazy">
+            </a>
+            <aside class="text"><a href="https://www.veed.io/view/5ad8baf7-b0b9-4914-8e5e-2b8c3432ecdf?sharingWidget=true&panel=share">
+                Kgf Chapter 2 full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+
+        <!-- pushpa -->
+        <div class="pictures">
+            <a href="">
+                <img class="img" src="thumbnail\pushpa.jpg" alt="Pushpa" title="Click to watch" loading="lazy">
+            </a>
+            <aside class="text"><a href="">
+                Pushpa full movie in 4k HD || click to watch and Download</a></aside>
+        </div>
+        
+    </main>
+
+
+    <!-- link script -->
+    <script src="./movie.js"></script>
+
+
+</body>
+</html>
